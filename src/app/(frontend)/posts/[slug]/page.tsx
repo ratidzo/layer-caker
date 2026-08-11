@@ -30,6 +30,7 @@ export default async function Page ({
 				 .auto("format")
 				 .url()}
 			alt={post?.mainImage?.alt || ""}
+			loading="eager"
 			width="800"
 			height="300"
 			/>
