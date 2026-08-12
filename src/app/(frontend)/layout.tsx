@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { SanityLive } from "@/sanity/lib/live"
+import { Header } from "@/components/header";
+import { SanityLive } from "@/sanity/lib/live";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,9 +12,10 @@ export default function FrontendLayout({ children,
 	children: React.ReactNode
 }>) {
 return (
-	<>
+	<section className="bg-white min-h-screen">
+		<Header />
 		{children}
 		<SanityLive />
-	</>
+	</section>
   )
 }
