@@ -12,8 +12,6 @@
  * ---------------------------------------------------------------------------------
  */
 
-export declare const internalGroqTypeReferenceTo: unique symbol;
-
 // Source: src/sanity/extract.json
 export type AuthorReference = {
   _ref: string;
@@ -276,6 +274,8 @@ export type AllSanitySchemaTypes =
   | SanityAssetSourceData
   | SanityImageAsset
   | Geopoint;
+
+export declare const internalGroqTypeReferenceTo: unique symbol;
 
 // Source: src/sanity/lib/queries.ts
 // Variable: POSTS_QUERY
