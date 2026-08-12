@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { sanityFetch } from "@/sanity/lib/live";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
-import { PostCard } from "@/components/title';
+import { PostCard } from "@/components/post-card";
 
 const options = { next: { revalidate: 60 } };
 

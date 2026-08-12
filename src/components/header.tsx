@@ -32,9 +32,11 @@ export function Header() {
 									{ link.title }
 								</Link>
 							</li>
-						)
+						))
 					}
 					
 				</ul>
 			</header>
 		</div>
+	)
+}
