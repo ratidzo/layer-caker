@@ -86,7 +86,7 @@ export type BlockContent = Array<
       media?: unknown;
       hotspot?: SanityImageHotspot;
       crop?: SanityImageCrop;
-      alt?: string;
+      alt: string;
       _type: "image";
       _key: string;
     }
