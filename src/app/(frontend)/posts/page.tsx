@@ -16,7 +16,7 @@ export default async function Page() {
 				{
 					posts.map((post) => (
 						<li key={post._id}>
-							<PostCard props={post} />
+							<PostCard {...post} />
 						</li>
 					))
 				}
