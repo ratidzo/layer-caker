@@ -1,3 +1,6 @@
+import { draftMode } from 'next/headers'
+import { VisualEditing } from 'next-sanity/visual-editing'
+import { DisableDraftMode } from '@/components/disable-draft-mode'
 import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { SanityLive } from "@/sanity/lib/live";
@@ -16,6 +19,14 @@ return (
 		<Header />
 		{children}
 		<SanityLive />
+		{
+			(await draftMode()).isEnabled && (
+				<>
+					<DisableDraftMode />
+					<VisualEditing />
+				</>
+			)}
+		}
 	</section>
   )
 }
